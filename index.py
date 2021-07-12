@@ -9,7 +9,7 @@ cap = DesiredCapabilities().FIREFOX
 cap["marionette"] = False
 path = os.getcwd()+"/drivers/geckodriver"
 
-browser = webdriver.Chrome(desired_capabilities=cap,executable_path=path)
+browser = webdriver.Firefox(desired_capabilities=cap,executable_path=path)
 chrome_options = Options()
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--window-size=1420,1080')
